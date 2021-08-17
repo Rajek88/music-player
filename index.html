@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rajendra's Music Player</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </head>
+    <body>
+
+
+        <!-- ********************* NAVBAR **************************************** -->
+        <nav class="navbar">
+            <ul class="nav-left-list">
+               <li><a href="index.html"><img class="logo-img" src="img/logo.png"></a></li>
+               <li><a href="#favourites"><p>Favourites</p></a></li>
+            </ul>
+            <ul class="nav-right-list">
+                <li><div class="search-bar"><i class="fa fa-search" aria-hidden="true"></i><input type="search" placeholder=" Search"><a href="#" class="voice-btn"><i class="fa fa-microphone" aria-hidden="true"></i></a></div></li>
+                <li><a><i class="fa fa-bell notification-icon" aria-hidden="true"></i></a></li>
+                <li><a><img class="user-img" src="img/myImg.jpg"></a></li>
+            </ul>
+        </nav>
+
+
+        <!-- ********************* header **************************************** -->
+
+        <section class="main container">
+            <section class="combo">
+
+
+                <div class="corousal">
+                    <div class="luav-div"><img class="luav" src="img/luav.png"></div>
+                    <div class="halsey-div"><img class="halsey" src="img/halsey.png"></div>
+                    <div class="eds-div"><img class="eds" src="img/eds.png"></div>
+                </div>
+
+
+
+
+                <div class="latest-release">
+                    <h3>Latest Release</h3>
+                    <!-- card row 2 -->
+
+
+
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="latest-release-card row">  
+                                <!-- Card Design -->
+                                <div class="col latest-release-player">
+                                    <img class="niall-img" src="img/niall.jpg">
+                                    <a href="#bottom-music-player"><i class="fa fa-play latest-release-play" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col">
+                                    <h4>This Town</h4>
+                                    <p>AUG 11 2020</p>
+                                </div>
+                                <div class="col card-options">
+                                    <div class="latest-release-dropdown-btn">
+                                        <a href="#cardOption" ><i class="fa fa-ellipsis-h latest-release-dropdown-icon" aria-hidden="true"></i></a>
+                                        <div class="latest-release-dropdown-show">
+                                            <div class="latest-release-dropdown-content" id="cardOption">
+                                                <div><i class="fa fa-play" aria-hidden="true"></i>Play Now</div><hr class="gray">
+                                                <div><i class="fa fa-plus" aria-hidden="true"></i>Add To Queue</div><hr class="gray">
+                                                <div><i class="fa fa-heart" aria-hidden="true"></i>Add To Favourites</div><hr class="gray">
+                                                <div><i class="fa fa-info-circle" aria-hidden="true"></i>More Info</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div><p>04.44</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div class="col">
+                            <div class="latest-release-card row">  
+                                <!-- Card Design -->
+                                <div class="col latest-release-player">
+                                    <img class="niall-img" src="img/halsey1.png">
+                                    <a href="#bottom-music-player"><i class="fa fa-play latest-release-play" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col">
+                                    <h4>Bad at Love</h4>
+                                    <p>AUG 21 2020</p>
+                                </div>
+                                <div class="col card-options">
+                                    <div class="latest-release-dropdown-btn">
+                                        <a href="#cardOption" ><i class="fa fa-ellipsis-h latest-release-dropdown-icon" aria-hidden="true"></i></a>
+                                        <div class="latest-release-dropdown-show">
+                                            <div class="latest-release-dropdown-content" id="cardOption">
+                                                <div><i class="fa fa-play" aria-hidden="true"></i>Play Now</div><hr class="gray">
+                                                <div><i class="fa fa-plus" aria-hidden="true"></i>Add To Queue</div><hr class="gray">
+                                                <div><i class="fa fa-heart" aria-hidden="true"></i>Add To Favourites</div><hr class="gray">
+                                                <div><i class="fa fa-info-circle" aria-hidden="true"></i>More Info</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div><p>04.44</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <!-- Card 1 -->
+                        <div class="col">
+                            <div class="latest-release-card row">  
+                                <!-- Card Design -->
+                                <div class="col latest-release-player">
+                                    <img class="niall-img" src="img/eds1.png">
+                                    <a href="#bottom-music-player"><i class="fa fa-play latest-release-play" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col">
+                                    <h4>Beautiful</h4>
+                                    <p>AUG 31 2020</p>
+                                </div>
+                                <div class="col card-options">
+                                    <div class="latest-release-dropdown-btn">
+                                        <a href="#cardOption" ><i class="fa fa-ellipsis-h latest-release-dropdown-icon" aria-hidden="true"></i></a>
+                                        <div class="latest-release-dropdown-show">
+                                            <div class="latest-release-dropdown-content" id="cardOption">
+                                                <div><i class="fa fa-play" aria-hidden="true"></i>Play Now</div><hr class="gray">
+                                                <div><i class="fa fa-plus" aria-hidden="true"></i>Add To Queue</div><hr class="gray">
+                                                <div><i class="fa fa-heart" aria-hidden="true"></i>Add To Favourites</div><hr class="gray">
+                                                <div><i class="fa fa-info-circle" aria-hidden="true"></i>More Info</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div><p>04.44</p></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div class="col">
+                            <div class="latest-release-card row">  
+                                <!-- Card Design -->
+                                <div class="col latest-release-player">
+                                    <img class="niall-img" src="img/zayn1.png">
+                                    <a href="#bottom-music-player"><i class="fa fa-play latest-release-play" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="col">
+                                    <h4>Forever Young</h4>
+                                    <p>AUG 11 2020</p>
+                                </div>
+                                <div class="col card-options">
+                                    <div class="latest-release-dropdown-btn">
+                                        <a href="#cardOption" ><i class="fa fa-ellipsis-h latest-release-dropdown-icon" aria-hidden="true"></i></a>
+                                        <div class="latest-release-dropdown-show">
+                                            <div class="latest-release-dropdown-content" id="cardOption">
+                                                <div><i class="fa fa-play" aria-hidden="true"></i>Play Now</div><hr class="gray">
+                                                <div><i class="fa fa-plus" aria-hidden="true"></i>Add To Queue</div><hr class="gray">
+                                                <div><i class="fa fa-heart" aria-hidden="true"></i>Add To Favourites</div><hr class="gray">
+                                                <div><i class="fa fa-info-circle" aria-hidden="true"></i>More Info</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div><p>04.44</p></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+
+
+                <!-- ***************************************************** artist List ***************************************** -->
+
+
+
+                <div>
+                    <h3>Popular Artists</h3>
+                    <div class="artist row">
+
+                        <div class="artist-col ar-eds"><a href="eds.html"><i class="fa fa-play" aria-hidden="true"></i></a><img class="artist-img " src="img/eds1.png"><p>Ed Sheeran</p></div>
+                        <div class="artist-col ar-zayn"><a href="eds.html"><i class="fa fa-play" aria-hidden="true"></i></a><img class="artist-img" src="img/zayn1.png"><p>Zayn Malik</p></div>
+                        <div class="artist-col ar-niall"><a href="eds.html"><i class="fa fa-play" aria-hidden="true"></i></a><img class="artist-img" src="img/niall1.png"><p>Niall Horan</p></div>
+                        <div class="artist-col ar-halsey"><a href="eds.html"><i class="fa fa-play" aria-hidden="true"></i></a><img class="artist-img" src="img/halsey1.png"><p>Hasley</p></div>
+                        <div class="artist-col ar-taylor"><a href="eds.html"><i class="fa fa-play" aria-hidden="true"></i></a><img class="artist-img" src="img/taylor1.png"><p>Taylor Swift</p></div>
+                        <div class="artist-col ar-charlie"><a href="eds.html"><i class="fa fa-play" aria-hidden="true"></i></a><img class="artist-img" src="img/charlie1.png"><p>Charlie Puth</p></div>   
+                        
+
+                    </div>
+                </div>
+
+
+
+                <!-- ******************************************* Station list **************************************** -->
+
+                <div class="station">
+                    <diV class="row">
+                        <div class="station-icon-col"><img class="station-icon-img" src="img/station-icon.png"></div>
+                        
+                            <div class="station-img-container"><img class="station-img" src="img/mono-halsey.png"><p>Love</p></div>
+                            <div class="station-img-container"><img class="station-img" src="img/mono-taylor.png"><p>Retro</p></div>
+                            <div class="station-img-container"><img class="station-img" src="img/mono-charlie.png"><P>Chill</P></div>
+                            <div class="station-img-container"><img class="station-img" src="img/mono-eds.png"><p>Gym</p></div>
+                            <div class="station-img-container"><img class="station-img" src="img/mono-zayn.png"><p>Rock</p></div>
+                            <div class="station-img-container"><img class="station-img" src="img/mono-niall.png"><p>Pop</p></div>   
+                        
+                    </diV>
+                </div>
+
+                <!-- ************************************************** category **************************************** -->
+
+
+                <div class="category">
+                    <div class="row">
+                        
+                        <div class="category-img-container"><div class="party-img"></div><h4>Party</h4></div>
+                        <div class="category-img-container"><div class="electronic-img"></div><h4>Electronic</h4></div>
+                        <div class="category-img-container"><div class="roadtrip-img"></div><h4>Road Trip</h4></div>
+                       
+                    </div>
+                </div>
+
+
+                <!-- ************************************************Latest English *************************************** -->
+
+                <div class="latest-english">
+                    <h3>Latest English</h3>
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/eng1.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/eng2.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/eng3.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/eng4.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/eng5.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/eng6.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- ******************************************** Latest Hindi as same as Latest English ******************** -->
+
+                <div class="latest-english">
+                    <h3>Latest Hindi</h3>
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/eng1.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/eng2.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/eng3.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/eng4.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/eng5.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="col">
+                            <img src="img/eng6.png">
+                            <h4>Onism</h4>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                    </div>
+
+                    <div class="queue-end" ></div>
+
+                </div>
+
+
+            </section>
+
+
+            <!-- ************************************************ Queue ******************************************************** -->
+            <section class="queue">
+                <div class="q-nav">
+                    <h3>Queue</h3>
+                    <div class="q-dropdown">
+                        <a><span style="color: aquamarine;">Queue</span>&nbsp;<i class="fa fa-chevron-down" style="color: aquamarine;" aria-hidden="true"></i></a>
+                        <div class="q-dropdown-list">
+                            <div class="q-dropdown-content">
+                                <div><h4>Playlist</h4></div><hr class="gray">
+                                <div><h4>Favourite Songs</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="q-card-container">
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">01</p>
+                                <img class="q-card-img" src="img/eng1.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Mirage</h4>
+                            <p>Rajendra</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">02</p>
+                                <img class="q-card-img" src="img/eng2.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>shape of you</h4>
+                            <p>Ed Sheeran</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">03</p>
+                                <img class="q-card-img" src="img/eng3.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Mercy</h4>
+                            <p>Shawn Mendes</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">04</p>
+                                <img class="q-card-img" src="img/eng4.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Be Kind</h4>
+                            <p>halsey</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">05</p>
+                                <img class="q-card-img" src="img/eng5.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Falling</h4>
+                            <p>Travour Daniels</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">06</p>
+                                <img class="q-card-img" src="img/eng6.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Modern Loneliness</h4>
+                            <p>Luav</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">07</p>
+                                <img class="q-card-img" src="img/eng1.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Dusk Till Dawn</h4>
+                            <p>Zayn</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">08</p>
+                                <img class="q-card-img" src="img/eng2.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Ghosts</h4>
+                            <p>Harry Styles</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">09</p>
+                                <img class="q-card-img" src="img/eng3.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Mirage</h4>
+                            <p>Rajendra</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">10</p>
+                                <img class="q-card-img" src="img/eng4.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Mirage</h4>
+                            <p>Rajendra</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+
+
+                    <div class="q-card"><div class="queue-end" ></div></div>
+
+
+                </div>
+
+
+            </section>
+        </section>
+
+        <!-- *****************************************Bottom Music Player*************************************** -->
+        <section class="bottom-player container" id="bottom-music-player">
+
+            <div class="bottom-player-row">
+                <div class="player-left">
+                        <img class="player-thumbnail" src="img/niall1.png">
+                        <div class="col">
+                            <h4>This Town</h4>
+                            <p>Niall Horan</p>
+                        </div>
+                </div>
+                <div class="player-mid">
+                    <i class="fa fa-backward" aria-hidden="true"></i>
+                    <audio src="music/thistown.mp3" class="music-player" controls loop>This Town by Niall Horan
+                    </audio>
+                    <i class="fa fa-forward" aria-hidden="true"></i>
+                </div>
+                <div class="player-right">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-indent" aria-hidden="true"></i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    &nbsp;&nbsp;
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    &nbsp;&nbsp;
+                    <a href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
+                    
+                </div>
+            </div>
+
+        </section>
+<!-- ****************************************************** Aside bar -->
+        <aside id="aside-bar">
+            <ul class="nav-right-list-sidebar">
+                <li><a><img class="user-img" src="img/myImg.jpg"></a></li>
+                <li><div class="search-bar"><i class="fa fa-search" aria-hidden="true"></i><input type="search" placeholder=" Search"><a href="#" class="voice-btn"><i class="fa fa-microphone" aria-hidden="true"></i></a></div></li>
+                <li><a><i class="fa fa-bell notification-icon" aria-hidden="true"></i></a></li>
+            </ul>
+            <section class="queue">
+                <div class="q-nav">
+                    <h3>Queue</h3>
+                    <div class="q-dropdown">
+                        <a><span style="color: aquamarine;">Queue</span>&nbsp;<i class="fa fa-chevron-down" style="color: aquamarine;" aria-hidden="true"></i></a>
+                        <div class="q-dropdown-list">
+                            <div class="q-dropdown-content">
+                                <div><h4>Playlist</h4></div><hr class="gray">
+                                <div><h4>Favourite Songs</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="q-card-container">
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">01</p>
+                                <img class="q-card-img" src="img/eng1.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Mirage</h4>
+                            <p>Rajendra</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">02</p>
+                                <img class="q-card-img" src="img/eng2.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>shape of you</h4>
+                            <p>Ed Sheeran</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">03</p>
+                                <img class="q-card-img" src="img/eng3.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Mercy</h4>
+                            <p>Shawn Mendes</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">04</p>
+                                <img class="q-card-img" src="img/eng4.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Be Kind</h4>
+                            <p>halsey</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">05</p>
+                                <img class="q-card-img" src="img/eng5.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Falling</h4>
+                            <p>Travour Daniels</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">06</p>
+                                <img class="q-card-img" src="img/eng6.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Modern Loneliness</h4>
+                            <p>Luav</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">07</p>
+                                <img class="q-card-img" src="img/eng1.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Dusk Till Dawn</h4>
+                            <p>Zayn</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">08</p>
+                                <img class="q-card-img" src="img/eng2.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Ghosts</h4>
+                            <p>Harry Styles</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">09</p>
+                                <img class="q-card-img" src="img/eng3.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Mirage</h4>
+                            <p>Rajendra</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+    
+    
+    
+    
+                    <div class="q-card">
+                        <div class="q-card-start-col">
+                            <div class="q-card-start">
+                                <p class="q-card-num">10</p>
+                                <img class="q-card-img" src="img/eng4.png">
+                            </div>
+                        </div>
+                        <div class="q-card-mid-col">
+                            <h4>Mirage</h4>
+                            <p>Rajendra</p>
+                        </div>
+                        <div class="q-card-heart">
+                            <i class="fa fa-heart-o " aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+
+
+                    <div class="q-card"><div class="queue-end" ></div></div>
+
+
+                </div>
+
+
+            </section>
+            
+        </aside>
+
+
+    </body>
+</html>
