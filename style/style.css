@@ -203,29 +203,27 @@ p{
     flex-wrap: nowrap;
     justify-content:center;
     align-items: center; 
-    border-radius: 30px;
+    
     animation: eds-header-animation 0.5s;
     
     
 }
 .corousal div{
     /* padding: 0px 5px; */
-    flex-shrink: 1;
-    width: 300px;
-    height: 90%;
+    flex-grow: 1;
+    width: 10px;
+    height: auto;
     /* border: 1px solid tomato; */
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: center;
 }
 .corousal img{
     display: inline-block;
     border-radius: 30px;
     height: 100%;
-    min-width: 400px;
-    max-width: 450px;
-    flex-grow: 1;
+    width: 100%;
+    /* flex-grow: 1; */
     transition: 0.2s ease-in-out;
 }
 
@@ -260,8 +258,8 @@ p{
 
 .halsey:hover{
     z-index: 555;
-    /* margin-top: -5px;
-    margin-bottom: -5px; */
+    margin-left: -5px;
+    margin-right: -5px;
     flex-grow: 3;
     /* width: 40%; */
     /* height: 250px; */
@@ -299,7 +297,7 @@ p{
 
 .latest-release-card-row{
     flex-grow: 1;
-    max-width: 90%;
+    max-width: 450px;
     min-width: 300px;
     margin-right: 10px;
     /* min-width: 400px;
@@ -341,6 +339,14 @@ p{
 
 .latest-release-player-col1:hover i{
     visibility: visible;
+}
+.latest-release-player-col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 
@@ -577,11 +583,20 @@ p{
 /* ***************************************** category Section******************************************** */
 
 .category{
-    height: 200px;
-    margin: 30px 0px;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.category .row{
+.category-row{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -591,11 +606,11 @@ p{
 
 .category-img-container{
     position: relative;
-    margin: 0px 10px;
+    margin: 10px 10px;
     display: flex;
     justify-content: center;
     height: 200px;
-    width: 10px;
+    width: 250px;
     flex-grow: 1;
     overflow: hidden;
 }
@@ -1242,14 +1257,29 @@ hr.gray {
         overflow-x: scroll;
     }
     .corousal div{
+        min-width: 250px;
+        max-width: 100%;
         flex-grow: 1;
-        flex-shrink: 0;
         margin-right: 10px;
     }
     .corousal img{
-        min-width: 250px;
-        max-width: 100%;
+        width: 100%;
     }
+
+    .luav:hover{
+        flex-grow: 0;
+        margin: 0px;
+    }
+    
+    .halsey:hover{
+        flex-grow: 0;
+        margin: 0px;
+    }
+    
+    .eds:hover{
+        flex-grow: 0;
+        margin: 0px;
+    } 
     .latest-release-section{
         justify-content:start;
         overflow-x: scroll;
@@ -1289,5 +1319,9 @@ hr.gray {
         display: none;
     }
 
+    .category-img-container{
+        border-radius: 10px;
+    }
+    
 
   }
