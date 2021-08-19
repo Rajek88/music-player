@@ -565,7 +565,7 @@ p{
 
 .station-img-container p{
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 35%;
     color: aliceblue;
 }
@@ -1220,7 +1220,7 @@ hr.gray {
 }
 
 #aside-bar{
-    width: 350px;
+    width: 280px;
     padding:0px 20px 20px 20px;
     z-index: 111111;
     background: #0C1027;
@@ -1278,6 +1278,12 @@ hr.gray {
     justify-content: flex-start;
     align-items: center;
     /* border:1px solid rgb(248, 148, 148); */
+}
+.aside-bar-eds-queue h2{
+    font-size: 18px;
+}
+.aside-bar-eds-queue h4, p{
+    font-size: 14px;
 }
 
 
