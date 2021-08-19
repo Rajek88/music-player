@@ -67,8 +67,14 @@ p{
     padding: 0% 5%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     z-index: 99;
+}
+
+#menu-btn{
+    display: none;
 }
 
 .navbar a{
@@ -107,7 +113,7 @@ p{
 }
 
 .logo-img{
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
@@ -1208,10 +1214,11 @@ hr.gray {
     background: #0C1027;
     position: absolute;
     top: 0%;
-    right: 0%;
+    left: 0%;
     display: none;
     overflow: scroll;
     height: 100%;
+    transition: ease-in-out 1s;
 }
 .nav-right-list-sidebar{
     position: sticky;
@@ -1233,16 +1240,44 @@ hr.gray {
     top: 4%;
     left: 10%;
     font-size: 15px;
+}
+.nav-right-list-sidebar .cancel-icon{
+    position: absolute;
+    top: 4%;
+    right: 10%;
+    font-size: 20px;
+    /* color: tomato; */
+    color: lightgray;
+    text-decoration: none;
+}
 
+.nav-right-list-sidebar .fa-microphone{
+    color: lightgray;
 }
 
 @media only screen and (max-width: 900px) {
     .queue{
         display: none;
     }
-    /* #aside-bar, #aside-bar .queue {
+
+    #menu-btn{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        padding: 5px;
+        border-radius: 50px;
+        background-color: #141B41;
+        margin-right: 20px;
+    }
+    #aside-bar:target{
         display: block;
-    } */
+        transition: ease-in-out 1s;
+
+    } 
     .nav-right-list{
         display: none;
     }
