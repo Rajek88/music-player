@@ -5,12 +5,15 @@ body{
     padding: 0px;
     margin: 0px;
     /* overflow: hidden; */
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
 }
+
 
 
 /* width */
 ::-webkit-scrollbar {
-    width: 2px;
+    width: 1px;
   }
   
   /* Track */
@@ -276,44 +279,67 @@ p{
 
 /************************************** Latest Release ******************************************/
 
-
-.latest-release .col{
-    flex-grow: 1;
+.latest-release{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.latest-release-card{
+.latest-release-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.latest-release-card-row{
+    flex-grow: 1;
+    max-width: 90%;
+    min-width: 300px;
+    margin-right: 10px;
+    /* min-width: 400px;
+    max-width: 400px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
     padding: 0 10px 0px 0px;
-    width: 400px;
     height: 120px;
-    /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    border: 1px solid rgba(255, 255, 255, 0.1);
     background-color: #141B41;
     border-radius: 2px;
     margin-bottom: 10px;
 }
 
-.latest-release-card img{
-    width: 120px;
+.latest-release-card-row img{
     height: 120px;
+    width: 120px;
 }
 
-.latest-release-player{
+.latest-release-player-col1{
     position: relative;
 }
 
-.latest-release-player a{
+.latest-release-player-col1 a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     position: absolute;
     top: 45%;
-    left: 30%;
+    left: 45%;
 }
 
-.latest-release-player i{
+.latest-release-player-col1 i{
     visibility: hidden;
 }
 
-.latest-release-player:hover i{
+.latest-release-player-col1:hover i{
     visibility: visible;
 }
 
@@ -326,20 +352,28 @@ p{
     visibility: visible;
 } */
 
-.card-options{
+.card-options-col{
+    position: relative;
     align-self: flex-start;
     text-align: end;
     margin-top: 1px;
     /* border:1px solid red; */
 }
 
-.card-options a{
+.card-options-col a{
     text-decoration: none;
     color: white;
 }
 
 /* *********************************************** Artists ***************************************** */
 
+.artist-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 .artist-col{
     display: flex;
@@ -474,6 +508,9 @@ p{
 
 /* *************************************** Station list************************************************* */
 
+.station-heading{
+    display: none;
+}
 
 .station{
     margin-top: 30px;
@@ -484,40 +521,54 @@ p{
 .station .row{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.station-inrow{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .station-icon-col{
-    width: 100px;
+
+    width: 150px;
+    padding: 10px;
     height: auto;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .station-img-container{
     position: relative;
     width: 100px;
     height: auto;
+    padding: 5px;
+
 }
 
 .station-img-container p{
     position: absolute;
     top: 20%;
-    left: 40%;
+    left: 35%;
     color: aliceblue;
 }
 
 
 .station-icon-img{
-    margin: 5px 10px 2px 10px;
+    /* margin: 5px 10px 2px 10px; */
     width: 150px;
     height: auto;
 }
 
 .station-img{
-    flex-grow: 1;
-    margin: 5px 20px 5px 20px;
-    width: 80px;
+    /* flex-grow: 1; */
+    /* margin: 5px 20px 5px 20px; */
+    width: 100px;
     height: auto;
     border-radius: 50%;
 }
@@ -1125,6 +1176,7 @@ hr.gray {
 }
 
 .latest-release-dropdown-btn:hover .latest-release-dropdown-show{
+    z-index: 999;
     display: block;
     /* border: 3px solid yellow; */
     
@@ -1169,7 +1221,7 @@ hr.gray {
 
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
     .queue{
         display: none;
     }
@@ -1179,11 +1231,63 @@ hr.gray {
     .nav-right-list{
         display: none;
     }
+
+    .corousal{
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
     .corousal div{
-        max-width: 100px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        margin-right: 10px;
     }
     .corousal img{
-        min-width: 280px;
-        max-width: 50%;
+        min-width: 250px;
+        max-width: 100%;
     }
+    .latest-release-section{
+        justify-content:start;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        padding-bottom: 50px;
+
+    }
+    .latest-release-card-row{
+        width: 300px;
+        max-width: 300px;
+    }
+    .artist-row{
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .station{
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .station-inrow{
+        align-items: center;
+        flex-grow: 0;
+    }
+
+    .station-heading{
+        display: block;
+        margin-bottom: 0%;
+    }
+
+    .station-icon-col{
+        display: none;
+    }
+
+
   }
