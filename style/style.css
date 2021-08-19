@@ -954,12 +954,13 @@ p{
 
 
 .eds-main-card-container{
-    width: 93%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
+    flex-wrap: wrap;
 }
 
 .eds-main-card{
@@ -1027,7 +1028,7 @@ p{
 }
 
 .eds-main-card-heart{
-    width: 10px;
+    width: 40px;
     flex-grow: 1;
     float: right;
     display: flex;
@@ -1067,21 +1068,27 @@ p{
 }
 
 .eds-header-col{
-    width: 50px;
-    flex-grow: 1;
+    height: 320px;
+    width: 250px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* border: 1px solid orange; */
 }
 
 .eds-header-img{
     width: 100%;
+    max-width: 250px;
     height: auto;
 }
 
 .eds-header-col-2{
+    min-width: 45%;
+    flex-grow: 1;
     padding: 20px;
     width: 50px;
-    flex-grow: 2;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1209,6 +1216,7 @@ hr.gray {
 }
 
 #aside-bar{
+    width: 350px;
     padding:0px 20px 20px 20px;
     z-index: 111111;
     background: #0C1027;
@@ -1218,7 +1226,7 @@ hr.gray {
     display: none;
     overflow: scroll;
     height: 100%;
-    transition: ease-in-out 1s;
+    transition:width, 2s, ease-in-out, 1s;
 }
 .nav-right-list-sidebar{
     position: sticky;
@@ -1254,6 +1262,20 @@ hr.gray {
 .nav-right-list-sidebar .fa-microphone{
     color: lightgray;
 }
+
+
+/* ************************************* EDS Aside***************************************************** */
+.aside-bar-eds-queue{
+    width: 300px;
+    flex-grow: 1;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* border:1px solid rgb(248, 148, 148); */
+}
+
 
 @media only screen and (max-width: 900px) {
     .queue{
@@ -1357,6 +1379,24 @@ hr.gray {
     .category-img-container{
         border-radius: 10px;
     }
-    
 
+
+    /* *********************************************************EDS page ********************************* */
+    
+    .eds-queue{
+        display: none;
+    }
+
+    /* .eds-header-col{
+        align-self: center;
+        justify-self: center;
+    } */
+
+  }
+
+  @media only screen and (max-width: 600px) {
+      .eds-header-col{
+        width: 100%;
+        background-color: #F6DD42;
+    }
   }
